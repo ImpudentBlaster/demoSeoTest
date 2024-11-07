@@ -3,7 +3,7 @@
 client_id = "04f335af6a63ca0b03168e887185ecad"
 name = "demoSeo-2"
 handle = "demoseo-2"
-application_url = "https://demo-seo-test.onrender.com"
+application_url = "https://latino-smell-dishes-rehabilitation.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_content,read_online_store_pages,read_products,read_themes,write_c
 
 [auth]
 redirect_urls = [
-  "https://demo-seo-test.onrender.com/auth/callback",
-  "https://demo-seo-test.onrender.com/auth/shopify/callback",
-  "https://demo-seo-test.onrender.com/api/auth/callback"
+  "https://latino-smell-dishes-rehabilitation.trycloudflare.com/auth/callback",
+  "https://latino-smell-dishes-rehabilitation.trycloudflare.com/auth/shopify/callback",
+  "https://latino-smell-dishes-rehabilitation.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

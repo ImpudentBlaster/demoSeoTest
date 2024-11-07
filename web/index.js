@@ -19,7 +19,7 @@ const STATIC_PATH =
 
 const app = express();
 
-// Set up Shopify authentication and webhook handling
+
 app.get(shopify.config.auth.path, shopify.auth.begin());
 app.get(
   shopify.config.auth.callbackPath,
@@ -30,23 +30,44 @@ app.post(
   shopify.config.webhooks.path,
   shopify.processWebhooks({ webhookHandlers: PrivacyWebhookHandlers })
 );
-
-// If you are adding routes outside of the /api path, remember to
-// also add a proxy rule for them in web/frontend/vite.config.js
-
-app.use("/api/*", shopify.validateAuthenticatedSession());
-
 app.use(express.json());
 
-console.log(process.env)
-console.log(process.env.SHOPIFY_API_SECRET)
-console.log(process.env.APP_URL)
-console.log(process.env.SHOPIFY_API_KEY)
+/////-----Function to get accessToken and shop-----/////
+const shopData = (shop) => {
+  return new Promise((resolve, reject) => {
+    const db = new sqlite3.Database(DB_PATH);
 
+    db.all(
+      "SELECT shop, accessToken FROM shopify_sessions",
+      [],
+      (err, rows) => {
+        if (err) {
+          console.error("Failed to retrieve tokens:", err);
+          reject({ error: "failed to retrieve tokens" });
+        } else {
+          const storeToken = rows.find((row) => row.shop === shop);
+          resolve(storeToken);
+        }
+      }
+    );
+
+    db.close();
+  });
+};
+/////-----Function to get accessToken and shop-----/////
+app.get('/api/getShopData' , async(req,res)=>{
+  try {
+    const data = await shopData(req.query.shop);
+    res.status(200).send(data)
+  } catch (error) {
+    res.status(404).send(error.message)
+  }
+})
 
 app.use(shopify.cspHeaders());
 app.use(serveStatic(STATIC_PATH, { index: false }));
 
+app.use("/api/*", shopify.validateAuthenticatedSession());
 app.use("/*", shopify.ensureInstalledOnShop(), async (_req, res, _next) => {
   return res
     .status(200)

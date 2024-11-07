@@ -1,0 +1,25 @@
+.top{
+    width: 45%;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 350;
+    /* border: 2px solid rgb(244, 226, 148); */
+  }
+  
+  .heading{
+    color: #303030;
+    font-size: 15px;
+    font-weight: 700;
+  
+  }
+  
+  .chart-num{
+    position: "absolute";
+    top: "50%";
+    left: "50%";
+    transform: "translate(-50%, -50%)";
+    font-size: "20px";
+    font-weight: "bold";
+  }
+  
+  

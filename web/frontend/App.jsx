@@ -20,6 +20,7 @@ export default function App() {
           <NavMenu>
             <a href="/" rel="home" />
             <a href="/pagename">TEST</a>
+            <a href="/HomePage/HomePageMain">Seo Audit</a>
           </NavMenu>
           <Routes pages={pages} />
         </QueryProvider>
