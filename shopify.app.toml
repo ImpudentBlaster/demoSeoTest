@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "04f335af6a63ca0b03168e887185ecad"
+name = "demoSeo-2"
+handle = "demoseo-2"
+application_url = "https://lat-passed-highland-cnet.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "development-for-experiments.myshopify.com"
+
+[auth]
+redirect_urls = [
+  "https://lat-passed-highland-cnet.trycloudflare.com/auth/callback",
+  "https://lat-passed-highland-cnet.trycloudflare.com/auth/shopify/callback",
+  "https://lat-passed-highland-cnet.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
