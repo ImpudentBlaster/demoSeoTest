@@ -3,18 +3,23 @@
 client_id = "04f335af6a63ca0b03168e887185ecad"
 name = "demoSeo-2"
 handle = "demoseo-2"
-application_url = "https://lat-passed-highland-cnet.trycloudflare.com"
+application_url = "https://benchmark-institution-openings-organ.trycloudflare.com"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
 dev_store_url = "development-for-experiments.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_content,read_online_store_pages,read_products,read_themes,write_content,write_online_store_pages,write_products,write_script_tags,write_themes"
 
 [auth]
 redirect_urls = [
-  "https://lat-passed-highland-cnet.trycloudflare.com/auth/callback",
-  "https://lat-passed-highland-cnet.trycloudflare.com/auth/shopify/callback",
-  "https://lat-passed-highland-cnet.trycloudflare.com/api/auth/callback"
+  "https://benchmark-institution-openings-organ.trycloudflare.com/auth/callback",
+  "https://benchmark-institution-openings-organ.trycloudflare.com/auth/shopify/callback",
+  "https://benchmark-institution-openings-organ.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

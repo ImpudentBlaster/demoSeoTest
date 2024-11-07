@@ -19,7 +19,7 @@ export default function App() {
         <QueryProvider>
           <NavMenu>
             <a href="/" rel="home" />
-            <a href="/pagename">ABABBA</a>
+            <a href="/pagename">TEST</a>
           </NavMenu>
           <Routes pages={pages} />
         </QueryProvider>
