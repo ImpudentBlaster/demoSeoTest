@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { NavMenu } from "@shopify/app-bridge-react";
 import Routes from "./Routes";
-
+import { ContextProvider } from "./components/DataContext";
 import { QueryProvider, PolarisProvider } from "./components";
 
 export default function App() {
@@ -17,12 +17,15 @@ export default function App() {
     <PolarisProvider>
       <BrowserRouter>
         <QueryProvider>
+          <ContextProvider>
+
           <NavMenu>
             <a href="/" rel="home" />
             <a href="/pagename">TEST</a>
             <a href="/HomePage/HomePageMain">Seo Audit</a>
           </NavMenu>
           <Routes pages={pages} />
+          </ContextProvider>
         </QueryProvider>
       </BrowserRouter>
     </PolarisProvider>

@@ -1,4 +1,7 @@
 import { Routes as ReactRouterRoutes, Route } from "react-router-dom";
+import SingleUrlSeoSummary from "./pages/SingleUrlSeoSummary/SingleUrlSeoSummary";
+import HomePageMain from './pages/HomePage/HomePageMain'
+import OnPageSeoAudit from "./pages/OnPageSeoAudit/OnPageSeoAudit";
 
 /**
  * File-based routing.
@@ -26,6 +29,9 @@ export default function Routes({ pages }) {
     <ReactRouterRoutes>
       {routeComponents}
       <Route path="*" element={<NotFound />} />
+      <Route path="/HomePageMain" element={<HomePageMain/>}/>
+      <Route path="/SingleUrlSeoSummary" element={<SingleUrlSeoSummary/>}/>
+      <Route path="/OnPageSeoAudit/OnPageSeoAudit" element={<OnPageSeoAudit/>}/>
     </ReactRouterRoutes>
   );
 }

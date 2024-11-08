@@ -3,7 +3,10 @@ import { XMLParser } from "fast-xml-parser";
 import axios from "axios";
 import { Banner } from "@shopify/polaris";
 import SEOPageSummary from '../SeoPageSummary/SEOPageSummary'
+import HomeOnPageSeoAudit from "./HomeOnPageSeoAudit";
+import PageUrls from "../PageUrl/PageUrls";
 function HomePageMain() {
+  console.log(window.location)
     const [score, setScore] = useState(0);
     const [pageUrlLoaded, setPageUrlLoaded] = useState(false);
     const [urls, setUrls] = useState([]);
@@ -246,14 +249,14 @@ function HomePageMain() {
           seoPageSummaryLoading={seoPageSummaryLoading}
           // error={seoPageSummaryError}
         />
-        {/* <SeoAuditComponent
+        <PageUrls
           loading={linksAuditLoading}
           eachUrlData={eachUrlData}
           pageUrls={pageUrls}
           // error={linksAuditError}
         />
         <HomeOnPageSeoAudit totalPages={pageUrls} />
-        <SeoOptimizationMain/>
+        {/* <SeoOptimizationMain/>
         <PageIndexingMain/> */}
     
       </div>

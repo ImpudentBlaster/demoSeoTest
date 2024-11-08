@@ -1,8 +1,9 @@
 import React from 'react'
 
 function HomePage() {
+  console.log(window.location)
   return (
-    <div>HomePage</div>
+    <div>HomePageee</div>
   )
 }
 

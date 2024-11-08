@@ -1,0 +1,39 @@
+.custom-button {
+    border: 1px solid #d3d3d3; /* Light grey border */
+    background-color: white; /* White background */
+    padding: 0.25rem 0.5rem; /* Adjust padding */
+    border-radius: 4px; /* Rounded corners */
+    color: #212b36; /* Darker text color */
+    font-weight: 500;
+  }
+  .custom-button:hover {
+    border-color: #007ace; /* Border color on hover */
+    color: #007ace; /* Text color on hover */
+    background-color: #f9fafb; /* Slight background color change on hover */
+  }
+  .audit-component-heading {
+    padding: 1.5rem 0 0.5rem 1rem;
+  }
+  .audit-individual-urls:hover {
+    background-color: #f1f1f1;
+  }
+  .urlmainbody {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    max-height: 25rem;
+  }
+  .audit-individual-urls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    border: 1px solid #e3e3e3;
+    width: 100%;
+    cursor: pointer;
+  }
+  .PageUrls-main {
+    padding: 0 4rem;
+  }
+  
