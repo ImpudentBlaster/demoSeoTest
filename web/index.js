@@ -7,6 +7,8 @@ import shopify from "./shopify.js";
 import productCreator from "./product-creator.js";
 import PrivacyWebhookHandlers from "./privacy.js";
 import axios from "axios";
+import cors from 'cors'
+
 
 const PORT = parseInt(
   process.env.BACKEND_PORT || process.env.PORT || "3000",
@@ -23,7 +25,7 @@ const STATIC_PATH =
     : `${process.cwd()}/frontend/`;
 
 const app = express();
-
+app.use(cors())
 const DB_PATH = `${process.cwd()}/database.sqlite`;
 app.get(shopify.config.auth.path, shopify.auth.begin());
 app.get(
