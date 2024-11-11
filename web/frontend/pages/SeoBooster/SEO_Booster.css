@@ -1,0 +1,23 @@
+.black-button {
+    color: white;
+    background-color: black;
+    border-color: black;
+    margin-right: 0px
+}
+
+.black-button:hover {
+    background-color: #333;
+}
+
+/* Responsive adjustments (optional if Grid already handles it) */
+/*  */
+
+.gird_container {
+    padding-top: 20px;
+
+    height: 40vh;
+}
+
+.CalloutCard_container {
+    padding-top: 20px;
+}

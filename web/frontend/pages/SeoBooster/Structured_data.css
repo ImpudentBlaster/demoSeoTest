@@ -1,0 +1,18 @@
+.enable_button {
+    padding-top: 12px;
+
+}
+
+.enable_button Button {
+    border-radius: 10px;
+}
+
+.custom-heading {
+    font-size: 18px;
+    /* Adjust the size as per your preference */
+    /* font-weight: bold; */
+}
+
+.grid_container {
+    padding-top: 20px;
+}

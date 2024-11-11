@@ -1,0 +1,132 @@
+.button_container {
+    padding-bottom: 20px;
+}
+
+/* Styling the slider track (the line part of the slider) */
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: black;
+    /* Track color set to black */
+    height: 5px;
+    /* Optional: Change the thickness of the track */
+}
+
+/* Styling the slider thumb (the circle part) */
+input[type="range"]::-webkit-slider-thumb {
+    background-color: black;
+    /* Thumb color set to black */
+    border-radius: 50%;
+    /* Optional: Make the thumb circular */
+    width: 20px;
+    /* Optional: Adjust the thumb size */
+    height: 20px;
+    cursor: pointer;
+}
+
+/* For Firefox browsers */
+input[type="range"]::-moz-range-thumb {
+    background-color: black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+/* Track color for Firefox */
+input[type="range"]::-moz-range-track {
+    background-color: black;
+    height: 5px;
+}
+
+/* For Microsoft Edge */
+input[type="range"]::-ms-track {
+    background-color: black;
+    height: 5px;
+}
+
+input[type="range"]::-ms-thumb {
+    background-color: black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.button_container {
+    padding-bottom: 20px;
+  }
+  
+  /* Styling the slider track (the line part of the slider) */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: black;
+    /* Track color set to black */
+    height: 5px;
+    /* Optional: Change the thickness of the track */
+  }
+  
+  /* Styling the slider thumb (the circle part) */
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: black;
+    /* Thumb color set to black */
+    border-radius: 50%;
+    /* Optional: Make the thumb circular */
+    width: 20px;
+    /* Optional: Adjust the thumb size */
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  /* For Firefox browsers */
+  input[type="range"]::-moz-range-thumb {
+    background-color: black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Track color for Firefox */
+  input[type="range"]::-moz-range-track {
+    background-color: black;
+    height: 5px;
+  }
+  
+  /* For Microsoft Edge */
+  input[type="range"]::-ms-track {
+    background-color: black;
+    height: 5px;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    background-color: black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .enable_button {
+    padding-top: 12px;
+  
+  }
+  
+  .enable_button Button {
+    border-radius: 10px;
+  }
+  
+  .custom-heading {
+    font-size: 18px;
+    /* Adjust the size as per your preference */
+    /* font-weight: bold; */
+  }
+  
+  .grid_container {
+    padding-top: 20px;
+  }

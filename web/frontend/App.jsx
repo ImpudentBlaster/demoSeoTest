@@ -23,6 +23,7 @@ export default function App() {
             <a href="/" rel="home" />
             <a href="/pagename">TEST</a>
             <a href="/HomePage/HomePageMain">Seo Audit</a>
+            <a href="/SeoBooster/SEO_Booster">SEO BOOSTER</a>
           </NavMenu>
           <Routes pages={pages} />
           </ContextProvider>

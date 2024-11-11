@@ -2,6 +2,7 @@ import { Routes as ReactRouterRoutes, Route } from "react-router-dom";
 import SingleUrlSeoSummary from "./pages/SingleUrlSeoSummary/SingleUrlSeoSummary";
 import HomePageMain from './pages/HomePage/HomePageMain'
 import OnPageSeoAudit from "./pages/OnPageSeoAudit/OnPageSeoAudit";
+import StructuredDataPage from "./pages/SeoBooster/Structured_data";
 
 /**
  * File-based routing.
@@ -32,6 +33,7 @@ export default function Routes({ pages }) {
       <Route path="/HomePageMain" element={<HomePageMain/>}/>
       <Route path="/SingleUrlSeoSummary" element={<SingleUrlSeoSummary/>}/>
       <Route path="/OnPageSeoAudit/OnPageSeoAudit" element={<OnPageSeoAudit/>}/>
+      <Route path="/Structured_data" element={<StructuredDataPage/>}/>
     </ReactRouterRoutes>
   );
 }
